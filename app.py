@@ -1,5 +1,10 @@
 # school map
 
+import streamlit as st
+
+st.title("광주동신여자고등학교 길찾기")
+
+st.write("학교 안내 서비스입니다.")
 
 routes = {
 
