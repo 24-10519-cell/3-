@@ -117,11 +117,6 @@ m = folium.Map(
     zoom_start=18
 )
 
-# GeoJSON 불러오기
-# folium.GeoJson(
-    "school.geojson",
-    name="학교"
-).add_to(m)
 
 # 지도 출력
 st_folium(
