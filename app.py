@@ -118,7 +118,7 @@ m = folium.Map(
 )
 
 # GeoJSON 불러오기
-folium.GeoJson(
+# folium.GeoJson(
     "school.geojson",
     name="학교"
 ).add_to(m)
