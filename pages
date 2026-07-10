@@ -1,3 +1,18 @@
 A.py
+import streamlit as st
+
+st.title("📍 A 위치")
+
+st.write("여기에 나중에 위치 설명을 작성합니다.")v
 B.py
+import streamlit as st
+
+st.title("📍 B 위치")
+
+st.write("여기에 나중에 위치 설명을 작성합니다.")
 C.py
+import streamlit as st
+
+st.title("📍 C 위치")
+
+st.write("여기에 나중에 위치 설명을 작성합니다.")
