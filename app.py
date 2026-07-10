@@ -100,3 +100,32 @@ st.write("""
 
 방문 시 층수를 확인해 주세요.
 """)
+
+import streamlit as st
+import folium
+from streamlit_folium import st_folium
+
+st.title("광주동신여자고등학교 안내 지도")
+
+# 학교 중심 좌표(예시)
+school_lat = 35.176
+school_lon = 126.912
+
+# 지도 생성
+m = folium.Map(
+    location=[school_lat, school_lon],
+    zoom_start=18
+)
+
+# GeoJSON 불러오기
+folium.GeoJson(
+    "school.geojson",
+    name="학교"
+).add_to(m)
+
+# 지도 출력
+st_folium(
+    m,
+    width=900,
+    height=600
+)
