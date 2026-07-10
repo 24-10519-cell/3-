@@ -1,4 +1,6 @@
 # school map
+
+
 routes = {
 
 ("정문","교무실"):
