@@ -52,17 +52,17 @@ col1, col2, col3 = st.columns(3)
 with col1:
     st.image("A.png", caption="A")
     if st.button("선택", key="A"):
-        st.session_state.page = "A"
+        st.switch_page("pages/A.py")
 
 with col2:
     st.image("B.png", caption="B")
     if st.button("선택", key="B"):
-        st.session_state.page = "B"
+        st.switch_page("pages/B.py")
 
 with col3:
     st.image("C.png", caption="C")
     if st.button("선택", key="C"):
-        st.session_state.page = "C"
+        st.switch_page("pages/C.py")
 
 # -----------------------------
 # 페이지 이동
