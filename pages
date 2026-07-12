@@ -1,18 +1,133 @@
 A.py
 import streamlit as st
 
-st.title("📍 A 위치")
+# -----------------------------
+# 페이지 설정
+# -----------------------------
+st.set_page_config(
+    page_title="A 위치 안내",
+    page_icon="📍",
+    layout="wide"
+)
 
-st.write("여기에 나중에 위치 설명을 작성합니다.")v
+# -----------------------------
+# 제목
+# -----------------------------
+st.title("📍 현재 위치 안내")
+
+st.subheader("현재 위치")
+
+# 현위치 지도(빨간 마커 표시된 이미지)
+st.image(
+    "aaa.png",
+    caption="현재 위치",
+    use_container_width=True
+)
+
+st.info("""
+📍 **빨간색 위치 마커로 표시된 곳이 현재 여러분이 위치한 장소입니다.**
+
+갈라지는 두 길 중 한쪽 길을 따라 계속 올라오시면 아래 사진과 같은 **학교 후문**이 보입니다.
+
+그곳으로 들어오시면 **학교 건물의 3층으로 진입**하게 됩니다.
+""")
+
+st.subheader("📷 아래 사진과 같은 후문이 보이면 맞게 이동하고 있는 것입니다.")
+
+st.image(
+    "D.png",
+    caption="학교 후문",
+    use_container_width=True
+)
+
+st.success("후문으로 들어오시면 학교 3층으로 연결됩니다.")
+
+st.divider()
+
+if st.button("🏠 메인 화면으로 돌아가기"):
+    st.switch_page("app.py")
 B.py
 import streamlit as st
 
-st.title("📍 B 위치")
+st.set_page_config(
+    page_title="B 위치 안내",
+    page_icon="📍",
+    layout="wide"
+)
 
-st.write("여기에 나중에 위치 설명을 작성합니다.")
+# -----------------------------
+# 제목
+# -----------------------------
+st.title("📍 현재 위치 안내")
+
+st.subheader("현재 위치")
+
+# 현재 위치 지도(빨간 마커 표시)
+st.image(
+    "bbb.png",
+    caption="현재 위치",
+    use_container_width=True
+)
+
+st.info("""
+📍 **빨간색 위치 마커로 표시된 곳이 현재 여러분이 위치한 장소입니다.**
+
+현재 여러분이 계신 곳은 **학교 1층**입니다.
+
+앞에 보이는 계단을 따라 계속 올라오시면 **학교 3층**으로 이동하실 수 있습니다.
+""")
+
+st.success("계단을 따라 올라오시면 학교 3층으로 연결됩니다.")
+
+st.divider()
+
+if st.button("🏠 메인 화면으로 돌아가기"):
+    st.switch_page("app.py")
 C.py
 import streamlit as st
 
-st.title("📍 C 위치")
+# -----------------------------
+# 페이지 설정
+# -----------------------------
+st.set_page_config(
+    page_title="C 위치 안내",
+    page_icon="📍",
+    layout="wide"
+)
 
-st.write("여기에 나중에 위치 설명을 작성합니다.")
+# -----------------------------
+# 제목
+# -----------------------------
+st.title("📍 현재 위치 안내")
+
+st.subheader("현재 위치")
+
+# 현재 위치 지도(빨간 마커 표시)
+st.image(
+    "ccc.png",
+    caption="현재 위치",
+    use_container_width=True
+)
+
+st.info("""
+📍 **빨간색 위치 마커로 표시된 곳이 현재 여러분이 위치한 장소입니다.**
+
+앞에 보이는 계단을 따라 계속 올라오시면 아래 사진과 같은 **학교 입구**가 보입니다.
+
+해당 입구로 들어오시면 **학교 건물 3층**으로 진입하게 됩니다.
+""")
+
+st.subheader("📷 아래 사진과 같은 입구가 보이면 맞게 이동하고 있는 것입니다.")
+
+st.image(
+    "D.png",
+    caption="학교 입구",
+    use_container_width=True
+)
+
+st.success("입구로 들어오시면 학교 3층으로 연결됩니다.")
+
+st.divider()
+
+if st.button("🏠 메인 화면으로 돌아가기"):
+    st.switch_page("app.py")
