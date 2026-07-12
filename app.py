@@ -77,4 +77,3 @@ if "page" in st.session_state:
 
     elif st.session_state.page == "C":
         st.switch_page("pages/C.py")
-        
