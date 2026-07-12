@@ -63,17 +63,3 @@ with col3:
     st.image("C.png", caption="C")
     if st.button("선택", key="C"):
         st.switch_page("pages/C.py")
-
-# -----------------------------
-# 페이지 이동
-# -----------------------------
-if "page" in st.session_state:
-
-    if st.session_state.page == "A":
-        st.switch_page("pages/A.py")
-
-    elif st.session_state.page == "B":
-        st.switch_page("pages/B.py")
-
-    elif st.session_state.page == "C":
-        st.switch_page("pages/C.py")
